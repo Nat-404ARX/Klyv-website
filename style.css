@@ -47,18 +47,14 @@
 }
 
 body {
-    margin: 10px auto;
     padding: 40px 50px;
-    text-align: center;
-    align-items: center;
-    align-items: center;
-    background: var(--bg-main);
+    background-color: var(--bg-main);
     color: var(--text-light);
     font-family: var(--font-main);
 }
 
 /* =========================
-    C'est ici pour ajouter du style
+    C'est ici pour ajouter du style <3
 ========================= */
 
 #carrousel {
