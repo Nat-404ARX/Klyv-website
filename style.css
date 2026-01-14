@@ -1,0 +1,57 @@
+
+/* =========================
+    Fonts
+========================= */
+
+@font-face {
+    font-family: "Playfair";
+    src: url("./asset/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SourceSans";
+    src: url("./asset/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500;
+}
+
+/* =========================
+    Variables
+========================= */
+
+:root {
+    --bg-main: #ffffff;
+    --bg-alt: #b4b4b4;
+
+    --text-light: #545454;
+    --text-dark: #ffffff;
+
+    --primary: #2204b8;
+    --secondary: #0d5d85;
+
+
+    --font-main: "Playfair", sans-serif;
+    --font-pixel: "SourceSans", sans-serif;
+
+    --radius: 12px;
+    --max-width: 1200px;
+}
+
+/* =========================
+    Layout global
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px auto;
+    padding: 40px 50px;
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    background: var(--bg-main);
+    color: var(--text-light);
+    font-family: var(--font-main);
+}
