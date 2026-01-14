@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     overflow: auto;
