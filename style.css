@@ -34,7 +34,6 @@
     --font-pixel: "SourceSans", sans-serif;
 
     --radius: 12px;
-    --max-width: 1200px;
 }
 
 /* =========================
@@ -43,6 +42,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -55,3 +56,21 @@ body {
     color: var(--text-light);
     font-family: var(--font-main);
 }
+
+/* =========================
+    C'est ici pour ajouter du style
+========================= */
+
+#carrousel {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.element-carrousel {
+    width: 80px;
+}
+
