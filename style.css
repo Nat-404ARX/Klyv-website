@@ -10,6 +10,20 @@
 }
 
 @font-face {
+    font-family: "PlayfairSC-b";
+    src: url("./asset/fonts/PlayfairDisplaySC-Bold.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "PlayfairSC-r";
+    src: url("./asset/fonts/PlayfairDisplaySC-Regular.ttf") format("truetype");
+    font-weight: 500;
+}
+
+
+
+@font-face {
     font-family: "SourceSans";
     src: url("./asset/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
     font-weight: 500;
@@ -20,10 +34,10 @@
 ========================= */
 
 :root {
-    --bg-main: #ffffff;
-    --bg-alt: #b4b4b4;
+    --bg-main: #AAC8FF;
+    --bg-alt: #f4f7fe;
 
-    --text-light: #545454;
+    --text-light: #2f2f2f;
     --text-dark: #ffffff;
 
     --primary: #2204b8;
@@ -48,7 +62,8 @@
 
 body {
     padding: 40px 50px;
-    background-color: var(--bg-main);
+    background-color: var(--bg-alt);
+    background: linear-gradient(var(--bg-main), var(--bg-alt), var(--bg-main));
     color: var(--text-light);
     font-family: var(--font-main);
 }
@@ -57,23 +72,47 @@ body {
     C'est ici pour ajouter du style <3
 ========================= */
 
+#titre {
+    font-family: PlayfairSC-b;
+    font-size: 68px;
+    padding-top: 28px;
+}
+
+#sous-titre {
+    font-family: PlayfairSC-r;
+    font-size: 40px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    justify-content: left;
+}
+
 #carrousel {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow: auto;
 }
 
 .element-carrousel {
-    width: 80px;
+    display:flex;
+    width: 180px;
+    height: 420px;
+    align-items: center;
 }
 
 #header-img {
     display: flex;
     flex-direction: row;
     gap: 45px;
+    justify-content: center;
 
 }
 
@@ -93,12 +132,23 @@ body {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    background-color: var(--text-dark);
+    border-radius: var(--radius);
+}
+
+.paragraphe {
+    padding: 5px 5px;
+}
+
+.titre-paragraphe {
+    padding-left: 20px;
+    font-size: 30px;
 }
 
 .img {
     height: 100%;
     width: 45%;
-    padding: 5px, 5px;
+    padding: 10px, 10px;
 }
 
 #alignement-footer {
@@ -114,4 +164,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    color: var(--text-dark);
+}
+
+.lien-footer {
+    color: var(--text-dark);
 }
